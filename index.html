@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Follow-Along Tutorial</title>
+    <link rel="stylesheet" href="./styling.css">
+    <script src="https://kit.fontawesome.com/0ce3c28f2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/temp_portfolio_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Nice to meet you! I'm <span>Elijah Renault.</span>
+                    <br>I'm a programmer analyst student currently studying in the Software Development program at
+                    NBCC.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------about section-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/elijah.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu est, euismod id bibendum
+                        sed, dignissim fermentum ipsum. Pellentesque habitant morbi tristique senectus et netus et
+                        malesuada fames ac turpis egestas. Pellentesque tincidunt tristique tortor sit amet facilisis.
+                        Mauris id pulvinar metus, tempus tincidunt urna. Aenean elementum iaculis eros sed commodo.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Sed blandit, eros vitae condimentum feugiat, eros nisi porttitor tellus, id pulvinar nisl sem
+                        sit amet massa. Integer blandit nibh a orci posuere, ut sodales erat eleifend. Aliquam erat
+                        volutpat. Pellentesque imperdiet, justo vel blandit fringilla, libero est tincidunt metus, nec
+                        feugiat urna lectus nec odio. In ornare felis sit amet dolor malesuada posuere. Donec in auctor
+                        sapien, id mollis nisi. Quisque aliquet in dolor non facilisis. Duis et velit ut ante cursus
+                        dignissim. Donec non cursus quam, ac maximus elit.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education and Training</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+                        <p class="tab-links" onclick="opentab('projects')">Personal Projects</p>
+                    </div>
+                    <!--education and training-->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Sept 2025 - Present</span><br>NBCC IT: Programmer Analyst Diploma</li><br>
+                            <li><span>Jan 2026 - Feb 2026</span><br>Worksafe NB: JHSC eLearning Certificate of
+                                Completion</li><br>
+                        </ul>
+                    </div>
+                    <!--skills-->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>C#, Java, Entity Framework</span><br>Working with C# forms and Java servlets and
+                                JSPs</li><br>
+                            <li><span>HTML, CSS, JavaScript, AJAX, Bootstrap</span><br>Designing web pages/applications
+                            </li><br>
+                            <li><span>Object-Oriented Programming</span><br>Designing and analyzing with UML</li><br>
+                            <li><span>MySQL</span><br>Database design and implementation</li><br>
+                            <li><span>Windows, Linux</span><br>Work involving these operating systems</li><br>
+                        </ul>
+                    </div>
+                    <!--work experience-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2025 - May 2025</span><br>Game Designer (Co-Op Program)<br>- Brilliant Labs
+                            </li><br>
+                            <li><span>Oct 2025</span><br>Installing Hydro Gardens (Volunteer Work)<br> - Loch Lomond
+                                Villa</li><br>
+                        </ul>
+                    </div>
+                    <!--personal projects-->
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>"The Public Domain" Concept Trailer</span><br>A short, hand-drawn teaser for a
+                                conceptual film</li><br>
+                            <li><span>"REVOLUTION" Concept Trailer</span><br>A two minute hand-drawn trailer for a
+                                conceptual film</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------contact section-------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-left"></div>
+                <h1 class="sub-title">Let's get in touch!</h1>
+                <p><i class="fas fa-paper-plane"></i>elijahrenault@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>(506) 566-2486</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/elijah-renault-8a82b639b/"><i
+                            class="fa-brands fa-square-linkedin"></i></a>
+                </div>
+                <a href="resume/Renault_Resume_OCT2026.pdf" download class="btn btn2">Download Current Resume</a>
+                <div class=" contact-col-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Elijah Renault</p>
+        </div>
+    </div>
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        let sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
